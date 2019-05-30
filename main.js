@@ -2,7 +2,7 @@ let modalButton = document.querySelector('#modal-button');
 const modal = document.querySelector('#modal');
 const overlay = document.querySelector('.modal-overlay')
 
-//Toggle
+//Toggle - 1st 
  modalButton.addEventListener('click', () => {
         if (modalButton.innerHTML === 'Open Modal'){
             modal.classList.add('active');
@@ -16,7 +16,7 @@ const overlay = document.querySelector('.modal-overlay')
         });
 
 
-//Close modal
+//Close modal - 2nd
 const modalCloseButton = document.querySelector('.modal-close-button');
 
 modalCloseButton.addEventListener('click', closeModal);
@@ -28,7 +28,7 @@ function closeModal() {
 
 };
 
-//Close modal on backdrop
+//Close modal on backdrop - 3rd
 overlay.addEventListener('click', (e) => {
     closeModal();
     modalButton.innerHTML = 'Open Modal'
