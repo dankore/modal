@@ -1,8 +1,16 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
-.modal-button {
-    /*cursor: pointer;*/
+#modal-button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: orange;
+    position: absolute;
+    
 }
 .modal {
     position: fixed;
@@ -35,6 +43,19 @@
     outline: none;
     font-size: 3.25rem;
     font-weight: bold;
+}
+.tooltip {
+    visibility: hidden;
+    padding: 2px;
+    position: absolute;
+    font-size: 12px;
+    background-color: silver;
+    color: white;
+    top: 70px;
+    z-index: 110;
+}
+.modal-close-button:hover .tooltip{
+    visibility: visible;
 }
 .modal-body {
     padding: 10px 15px;
